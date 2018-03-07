@@ -3,8 +3,6 @@ package arith
 object Core {
   import Syntax._
 
-  case class NoRuleAppliesException(t: Term) extends Exception
-
   // 項は数値か?
   def isNumerical(t: Term): Boolean = t match {
     case TmZero => true
